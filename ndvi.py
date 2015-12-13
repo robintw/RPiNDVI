@@ -46,11 +46,12 @@ def contrast_stretch(im):
 
     return out
 
+
 def run():
     with picamera.PiCamera() as camera:
         # Set the camera resolution
         x = 400
-        camera.resolution = (int(1.33*x), x)
+        camera.resolution = (int(1.33 * x), x)
         # Various optional camera settings below:
         # camera.framerate = 5
         # camera.awb_mode = 'off'
